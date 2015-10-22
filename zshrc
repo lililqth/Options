@@ -1,7 +1,18 @@
+# java配置
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home'
+export PATH=${JAVA_HOME}/bin:$PATH
+export CLASSPATH=".:/usr/local/lib/antlr-4.5-complete.jar:"$CLASSPATH
+alias antlr4='java -jar /usr/local/lib/antlr-4.5-complete.jar'
+alias grun='java org.antlr.v4.runtime.misc.TestRig'
 # 我的设置
+alias nusmv='/opt/local/bin/nusmv' #形式化检测工具nusmv
+# alias vim='mvim'
+# 各种目录
+alias jw='cd ~/Documents/workspace/JAVA_WORKSPACE/'
 alias mvb='cd ~/Desktop/MVB'
-alias MVB='cd ~/Documents/MVB'
-alias vim='mvim'
+alias MVB='cd ~/Documents/MVB/工作汇总/MVB_FINAL_VERSION'
+alias jg='cd /Users/qiji/我的坚果云'
+alias ws='cd ~/Desktop/workspace/'
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load.
@@ -53,10 +64,11 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:."
+#export PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin
+export PATH=$PATH:/Users/qiji/我的坚果云/MyScript
 # export MANPATH="/usr/local/man:$MANPATH"
-export MANPATH=/usr/local/texlive/2014/texmf-dist/doc/man
+#export MANPATH=/usr/local/texlive/2014/texmf-dist/doc/man
 export INFOPATH=/usr/local/texlive/2014/texmf-dist/doc/info
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

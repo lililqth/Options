@@ -3,11 +3,12 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set encoding=utf-8
 set termencoding=utf-8
+set path=$PWD/**
 " 配色
 syntax enable
 "set background=dark
 "colorscheme solarized
-colorscheme desert
+"colorscheme desert
 " 显示行号
 set nu
 set hlsearch "搜索时高亮显示被找到的文本
@@ -19,7 +20,7 @@ set softtabstop=4 "把连续数量的空格视为一个制表符
 set autoread "文件自动重新读入
 set ignorecase "检索时忽略大小写
 set linespace=4 "行间距
-set guifont=Monaco:h12.5 "字体和大小
+set guifont=Monaco:h12 "字体和大小
 "pathogen管理插件
 execute pathogen#infect() 
 "Nerdtree显示目录树{
@@ -27,4 +28,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 "}
-
+if has("gui_running") 
+    set guioptions-=L " 隐藏左侧滚动条 
+    set guioptions-=b " 隐藏底部滚动条 
+endif 
