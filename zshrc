@@ -6,6 +6,7 @@ alias antlr4='java -jar /usr/local/lib/antlr-4.5-complete.jar'
 alias grun='java org.antlr.v4.runtime.misc.TestRig'
 # 我的设置
 alias nusmv='/opt/local/bin/nusmv' #形式化检测工具nusmv
+alias rm='trash-put' #命令行回收站工具
 # alias vim='mvim'
 # 各种目录
 alias jw='cd ~/Documents/workspace/JAVA_WORKSPACE/'
@@ -59,7 +60,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git sudo extract z)
 
 source $ZSH/oh-my-zsh.sh
 
