@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/qiji/.oh-my-zsh'
 let g:netrw_dirhist_2='/Users/qiji'
 let g:netrw_dirhist_3='/Users/qiji/Documents/workspace/git/lililqth.github.io/_layouts'
 let g:netrw_dirhist_4='/Users/qiji/Downloads/InPermutation.github.io-master/_includes'
 let g:netrw_dirhist_5='/Users/qiji/Documents/workspace/git/lililqth.github.io/_includes'
+let g:netrw_dirhist_6='/Users/qiji/Desktop/NewStart/hdlsrc/After Optimizim'
+let g:netrw_dirhist_7='/Users/qiji'

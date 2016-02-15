@@ -6,12 +6,14 @@ set termencoding=utf-8
 set path=$PWD/**
 " 配色
 syntax enable
-"set background=dark
-"colorscheme solarized
-"colorscheme desert
+set background=dark
+colorscheme solarized
 " 显示行号
 set nu
+set wrap 
+set textwidth=70
 set hlsearch "搜索时高亮显示被找到的文本
+set ignorecase smartcase "搜索时智能忽略大小写，输入一个大写字母的时候进行精确匹配
 filetype indent on "自适应不同语言的智能缩进
 set expandtab "将制表符扩展为空格
 set tabstop=4 "设定tab的长度为4
@@ -30,5 +32,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "}
 if has("gui_running") 
     set guioptions-=L " 隐藏左侧滚动条 
+    set guioptions-=r " 隐藏左侧滚动条 
     set guioptions-=b " 隐藏底部滚动条 
 endif 
+" 缩进显示插件vim-indent-guides。启动 vim 时直接启用插件
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size=1
