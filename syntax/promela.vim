@@ -26,7 +26,7 @@ endif
 syntax case match
 
 
-" Some usefull Promela keywords
+" Some useful Promela keywords
 syn keyword	promStatement		goto break never skip timeout of
 syn keyword	promStatement		atomic d_step
 syn keyword	promOperator		len printf run
