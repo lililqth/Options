@@ -1,3 +1,13 @@
+set textwidth=80 " 自动换行
+set ai "自动缩进
+set showmatch   "代码匹配
+set cursorline  "为光标所在行加下划线
+set fileencodings=uft-8,gbk "使用utf-8或gbk打开文件
+
+" 光标移动到 buffer 顶部和底部时保留距离
+set scrolloff=5
+" 剪切板
+set clipboard=unnamed
 " 编码
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
@@ -7,11 +17,12 @@ set path=$PWD/**
 " 配色
 syntax enable
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+"colorscheme molokai
+colorscheme Wombat256
 " 显示行号
 set nu
 set wrap 
-set textwidth=70
 set hlsearch "搜索时高亮显示被找到的文本
 set ignorecase smartcase "搜索时智能忽略大小写，输入一个大写字母的时候进行精确匹配
 filetype indent on "自适应不同语言的智能缩进
@@ -35,6 +46,4 @@ if has("gui_running")
     set guioptions-=r " 隐藏左侧滚动条 
     set guioptions-=b " 隐藏底部滚动条 
 endif 
-" 缩进显示插件vim-indent-guides。启动 vim 时直接启用插件
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size=1
+nnoremap <esc> :nohl<cr>

@@ -51,8 +51,15 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:."
+export PATH=$PATH:/Users/qiji/Documents/workspace/LLVMCompiler/build/bin
+#export PATH=$PATH:/Library/Python/2.7/site-packages
 #export PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin
 export PATH=$PATH:/Users/qiji/我的坚果云/MyScript
+# jupyter
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export PATH=$PATH:/Users/qiji/anaconda2/bin
+export PATH=$PATH:/Users/qiji/anaconda2
 # export MANPATH="/usr/local/man:$MANPATH"
 #export MANPATH=/usr/local/texlive/2014/texmf-dist/doc/man
 export INFOPATH=/usr/local/texlive/2014/texmf-dist/doc/info
@@ -81,6 +88,9 @@ export INFOPATH=/usr/local/texlive/2014/texmf-dist/doc/info
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# latex 配置
+export PATH=$PATH:/Library/TeX/texbin/
+
 #  MacPort配置
 export PATH=$PATH:/opt/local/bin
 export PATH=$PATH:/opt/local/sbin/
@@ -95,14 +105,11 @@ alias nusmv='/opt/local/bin/nusmv' #形式化检测工具nusmv
 alias rm='trash-put' #命令行回收站工具
 # alias vim='mvim'
 # 各种目录
-alias jw='cd ~/Documents/workspace/JAVA_WORKSPACE/'
-alias mvb='cd ~/Desktop/MVB'
-alias MVB='cd ~/Documents/MVB/工作汇总/MVB_FINAL_VERSION'
-alias jg='cd /Users/qiji/我的坚果云'
-alias ws='cd ~/Desktop/workspace/'
+alias ws='cd ~/Documents/workspace/'
 export TERM=xterm-256color
-if brew list | grep coreutils > /dev/null ; then
-    PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-    alias ls='ls -F --show-control-chars --color=auto'
-    eval `gdircolors -b $HOME/.dir_colors`
-fi
+
+#if brew list | grep coreutils > /dev/null ; then
+#    PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+#    alias ls='ls -F --show-control-chars --color=auto'
+#    eval `gdircolors -b $HOME/.dir_colors`
+#fi
