@@ -54,7 +54,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:."
 export PATH=$PATH:/Users/qiji/Documents/workspace/LLVMCompiler/build/bin
 #export PATH=$PATH:/Library/Python/2.7/site-packages
 #export PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin
-export PATH=$PATH:/Users/qiji/我的坚果云/MyScript
 # jupyter
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -102,14 +101,16 @@ alias antlr4='java -jar /usr/local/lib/antlr-4.5-complete.jar'
 alias grun='java org.antlr.v4.runtime.misc.TestRig'
 # 我的设置
 alias nusmv='/opt/local/bin/nusmv' #形式化检测工具nusmv
-alias rm='trash-put' #命令行回收站工具
+# https://github.com/andreafrancia/trash-cli
+# alias rm='trash-put' #命令行回收站工具
 # alias vim='mvim'
 # 各种目录
-alias ws='cd ~/Documents/workspace/'
 export TERM=xterm-256color
-
-#if brew list | grep coreutils > /dev/null ; then
-#    PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-#    alias ls='ls -F --show-control-chars --color=auto'
-#    eval `gdircolors -b $HOME/.dir_colors`
-#fi
+# go 目录
+#export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+#export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH
