@@ -58,6 +58,8 @@
     // How to set the background color of Ls directories
     // https://askubuntu.com/questions/466198/how-do-i-change-the-color-for-directories-with-ls-in-the-console
     // https://unix.stackexchange.com/questions/94498/what-causes-this-green-background-in-ls-output
+    // How to set the color of cd-tab-complete?
+    // https://unix.stackexchange.com/questions/16243/is-there-a-way-to-set-coloring-for-cd-tab-complete
     "schemes": [
         {
             "background": "#282A36",
