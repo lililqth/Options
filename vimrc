@@ -19,7 +19,6 @@ syntax enable
 set background=dark
 " colorscheme solarized
 "colorscheme molokai
-colorscheme Wombat256
 " 显示行号
 set nu
 set wrap 
@@ -34,13 +33,6 @@ set autoread "文件自动重新读入
 set ignorecase "检索时忽略大小写
 set linespace=4 "行间距
 set guifont=Monaco:h12 "字体和大小
-"pathogen管理插件
-execute pathogen#infect() 
-"Nerdtree显示目录树{
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-"}
 if has("gui_running") 
     set guioptions-=L " 隐藏左侧滚动条 
     set guioptions-=r " 隐藏左侧滚动条 
