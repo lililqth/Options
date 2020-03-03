@@ -32,7 +32,7 @@
             "startingDirectory": "//wsl$/Ubuntu-18.04/home/lililqth",
             "acrylicOpacity": 0.9,
             "closeOnExit": true,
-            "colorScheme": "Night Owl",
+            // "colorScheme": "Night Owl",
             "cursorColor": "#80A4C2",
             "cursorShape": "bar",
             "fontFace": "Consolas",
